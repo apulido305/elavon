@@ -32,5 +32,5 @@
                 </div>
             </div>
         </div>
-        @extends('layouts.footer')
+        {{-- @extends('layouts.footer') --}}
 @endsection
