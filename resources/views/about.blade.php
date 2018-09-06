@@ -1,5 +1,5 @@
-@extends('layouts.app')
+@extends('app')
 @section('content')
   <h1>AMENITIES</h1>
-@extends('layouts.footer')
+@extends('footer')
 @endsection

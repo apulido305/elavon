@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('app')
 @section('content')
   <h1>{{$title}}</h1>
   <ul class = "list-group">
@@ -8,5 +8,5 @@
     @endforeach
     </ul>
   @endif
-@extends('layouts.footer')
+@extends('footer')
 @endsection

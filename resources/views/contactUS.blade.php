@@ -1,4 +1,4 @@
-{{-- @extends('layouts.app') --}}
+@extends('app')
 @section('content')
 <div class="container">
 </div>
@@ -58,5 +58,5 @@ Phone: (512) 232-1111
 
 </body>
 </html>
-{{-- @extends('layouts.footer') --}}
+@extends('footer')
 @endsection
