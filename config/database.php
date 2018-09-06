@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
@@ -12,7 +11,13 @@ return [
     | you may use many connections at once using the Database library.
     |
     */
+      $url = parse_url(getenv("DATABASE_URL"));
 
+      $host = $url["host"];
+      $username = $url["user"];
+      $password = $url["pass"];
+      $database = substr($url["path"], 1);
+      
     'default' => env('DB_CONNECTION', 'pqsql'),
 
     /*
