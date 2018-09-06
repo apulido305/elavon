@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('/layouts/app')
 @section('content')
  <section class="py-5">
         <div class="container pt-2">
@@ -32,5 +32,5 @@
                 </div>
             </div>
         </div>
-        @extends('layouts.footer')
+        @extends('/layouts/footer')
 @endsection
