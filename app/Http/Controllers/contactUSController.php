@@ -14,7 +14,7 @@ return view('contactUS');
    /** * Show the application dashboard. * * @return \Illuminate\Http\Response */
    public function contactUSPost(Request $request)
    {
-    $this->validate($request, [ 'name' => 'required', 'email' => 'required|email', 'message' => 'required','phone' => 'required', 'subject' => 'required' ]);
+    $this->validate($request, [ 'name' => 'required', 'email' => 'required|email', 'message' => 'required','phone' => 'optional', 'subject' => 'optional' ]);
     ContactUS::create($request->all());
 
     return back()->with('success', 'Thanks for contacting us!');
